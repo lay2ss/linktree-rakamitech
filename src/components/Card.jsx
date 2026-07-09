@@ -46,7 +46,7 @@ const socials = [
                 animated
                 colors={['#c084fc', '#f472b6', '#31267e']}
                 >
-                <div className="p-10 xs:px-20 xs:py-30">
+                <div className="p-10 xs:px-18 xs:py-30">
                     <div className="flex items-center flex-col">
                         <img className="w-40" src={logo} alt="logo" />
                         <h1 className="orbitron text-2xl pt-3 font-semibold">Rakami Tech</h1>
