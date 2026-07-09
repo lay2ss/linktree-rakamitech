@@ -1,5 +1,38 @@
 @import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+  --breakpoint-xs: 400px;
+}
+
+html {
+  background-color: var(--bg-dark);
+  height: 100vh;
+  scroll-behavior: smooth;
+  color: white;
+}
 
 :root {
+  --purple: #9B53FB;
+  --light-purple: #DACFF9;
+  --bg-dark: #04000F;
+}
 
+::selection {
+  background: var(--purple);
+  color: #000;        
+}
+
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.fredoka{
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
