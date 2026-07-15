@@ -1,12 +1,12 @@
-import LightRays from "./LightRays"
-import BorderGlow from "./BorderGlow"
+import BorderGlow from "./BorderGlow";
+import ColorBends from "./ColorBends";
 import logo from "../assets/R_logo.png";
 import Socials from "./Socials";
 import GradientText from "./GradientText";
-import Heart from '../assets/heart.png'
-import tiktok from '../assets/purple_ttk.svg'
-import insta from '../assets/purple_insta.svg'
-import wpp from '../assets/purple_wpp.svg'
+import Heart from '../assets/heart.png';
+import tiktok from '../assets/purple_ttk.svg';
+import insta from '../assets/purple_insta.svg';
+import wpp from '../assets/purple_wpp.svg';
 
 const Card = () => {
 
@@ -32,13 +32,13 @@ const socials = [
 ];
 
   return (
-    <main className="px-5">
+    <main>
         <div style={{ width: '100%', height: '95vh', position: 'relative' }}>
-            <div className="flex w-full justify-center items-center h-full absolute z-2">
+            <div className="flex w-full justify-center items-center h-full absolute z-2 px-5">
                 <BorderGlow
                 edgeSensitivity={30}
                 glowColor="40 80 80"
-                backgroundColor="#00000"
+                backgroundColor="#04000f"
                 borderRadius={28}
                 glowRadius={40}
                 glowIntensity={1}
@@ -52,7 +52,7 @@ const socials = [
                         <h1 className="orbitron text-2xl pt-3 font-semibold">Rakami Tech</h1>
                             <div className="fredoka text-lg tracking-wide max-w-50 text-center">Transformando ideais em
                                 <GradientText
-                                    colors={["#5227FF","#FF9FFC","#B497CF"]}
+                                    colors={["#9B53FB","#FF9FFC","#B497CF"]}
                                     animationSpeed={8}
                                     showBorder={false}
                                     className="pl-2"
@@ -68,23 +68,25 @@ const socials = [
                 </div>
                 </BorderGlow>
             </div>
-            <LightRays
-                raysOrigin="top-center"
-                raysColor="#9B53Fb"
-                raysSpeed={1}
-                lightSpread={0.5}
-                rayLength={3}
-                followMouse={true}
-                mouseInfluence={0.1}
-                noiseAmount={0}
-                distortion={0}
-                className="custom-rays"
-                pulsating={false}
-                fadeDistance={1}
-                saturation={1}
+            <ColorBends
+            colors={["", "", "#A855F7"]}
+            rotation={90}
+            speed={0.2}
+            scale={1}
+            frequency={1}
+            warpStrength={1}
+            mouseInfluence={1}
+            noise={0.15}
+            parallax={0.5}
+            iterations={1}
+            intensity={1.5}
+            bandWidth={6}
+            transparent
+            autoRotate={0}
+            color="#A855F7"
             />
             </div>
-            <p className="fredoka font-light opacity-50 text-sm flex gap-2 items-center justify-center">Made with <img className="w-4 h-min" src={Heart} alt="heart icon" /> by <a href="https://github.com/lay2ss">@lay2ss</a></p>
+            <footer className="mt-2 fredoka font-light opacity-70 text-sm flex gap-2 items-center justify-center">Made with <img className="w-4 h-min" src={Heart} alt="heart icon" /> by <a href="https://github.com/lay2ss">@lay2ss</a></footer>
     </main>
   )
 }
