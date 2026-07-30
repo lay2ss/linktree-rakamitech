@@ -10,26 +10,27 @@ import wpp from '../assets/purple_wpp.svg';
 
 const Card = () => {
 
-const socials = [
-    {
-        id: 1,
-        name: "Instagram",
-        link: "https://www.instagram.com/rakamitech",
-        icon: insta,
-    },
-    {
-        id: 2,
-        name: "TikTok",
-        link: "https://www.tiktok.com/@rakamitech",
-        icon: tiktok,
-    },
-    {
-        id: 3,
-        name: "WhatsApp",
-        link: "https://wa.me/message/PUKQDB62FKMIA1",
-        icon: wpp,
-    },
-];
+    const currentYear = new Date().getFullYear();
+    const socials = [
+        {
+            id: 1,
+            name: "Instagram",
+            link: "https://www.instagram.com/rakamitech",
+            icon: insta,
+        },
+        {
+            id: 2,
+            name: "TikTok",
+            link: "https://www.tiktok.com/@rakamitech",
+            icon: tiktok,
+        },
+        {
+            id: 3,
+            name: "WhatsApp",
+            link: "https://wa.me/message/PUKQDB62FKMIA1",
+            icon: wpp,
+        },
+    ];
 
   return (
     <main>
@@ -86,7 +87,7 @@ const socials = [
             color="#A855F7"
             />
             </div>
-            <footer className="mt-2 fredoka font-light opacity-70 text-sm flex gap-2 items-center justify-center">Made with <img className="w-4 h-min" src={Heart} alt="heart icon" /> by <a href="https://github.com/lay2ss">@lay2ss</a></footer>
+            <footer className="mt-2 opacity-70 text-sm flex gap-2 items-center justify-center">© {currentYear} Rakami Tech. Todos os direitos reservados.</footer>
     </main>
   )
 }
