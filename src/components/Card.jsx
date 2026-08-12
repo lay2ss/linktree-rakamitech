@@ -21,7 +21,7 @@ const Card = () => {
         {
             id: 2,
             name: "TikTok",
-            link: "https://www.tiktok.com/@rakamitech",
+            link: "https://www.tiktok.com/@rakami.tech.impre",
             icon: tiktok,
         },
         {
